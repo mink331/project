@@ -1,0 +1,147 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+  
+body { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+  overflow: hidden; 
+  background-position: center center; 
+  background-size: cover; 
+    /* background-image: url('image/s-l1600.webp');   */
+  transition: all 0.5 ease-in-out;
+}
+
+.container { 
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding: 0 16px;
+}
+
+.navbar { 
+    position: fixed; 
+    margin: 0 auto;
+    width: 100%; 
+    padding: 15px 0; 
+    background-color: aqua;
+} 
+
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+} 
+nav ul { 
+    display: flex; 
+    align-items: center; 
+    list-style-type: none;
+  } 
+
+nav ul li a { 
+    text-decoration: none; 
+    padding: 6px 15px; 
+    border-radius: 2px; 
+    font-size: 20px;
+}
+
+#form input { 
+  width: 650px; 
+  outline: none; 
+  border: none; 
+  border-radius: 20px; 
+  padding: 13px 25px;
+}
+
+#form {  
+    outline: none; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 10px;
+}
+
+/*.signIn { 
+    margin-right: 100px;  
+  } 
+
+  .btn { 
+    color: white;
+    padding: 10px 15px; 
+    background-color: red; 
+    border-radius: 0.5rem; 
+    border: none; 
+  } 
+
+  .btn:hover { 
+    background: #e85151;
+  } */ 
+
+body::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100vh; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+} 
+
+.sliderContainer { 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17) 0 3px 6px rgba(0, 0, 0, 0.23); 
+    height: 70vh; 
+    width: 100vh; /* 140vh */
+    position: relative; 
+    overflow: hidden; 
+    border: 3px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.slide { 
+    opacity: 0; 
+    height: 100vh; 
+    width: 100vh; 
+    background-position: center center; 
+    background-size: cover; 
+    position: absolute; 
+    top: -15vh; 
+    left: -15vw; 
+    z-index: 1;
+} 
+
+.slide.active{ 
+    opacity: 1; 
+    left: 3PX;  
+} 
+
+.arrow { 
+    position: fixed; 
+    background: #ddd; 
+    color: #111; 
+    padding: 20px; 
+    top: 380px; 
+    transform: translateY(50%)  ; 
+    cursor: pointer; 
+    border-radius: 10%;
+} 
+
+.arrow i{ 
+    font-size: 1.5em;
+} 
+
+.arrow:focus { 
+    outline: none;
+} 
+
+.left-arrow { 
+    left: calc(28vw - 65px) ; /* (18vw - 65px) */ 
+    z-index: 1;
+} 
+
+.right-arrow { 
+    right: calc(28vw - 65px); /* (18vw - 65px) */ 
+    z-index: 1;
+}
